@@ -1,0 +1,81 @@
+ Pickle Rick v2 - TryHackMe CTF Walkthrough
+
+Target IP Address: 10.10.227.124
+
+Challenge Theme: A Rick and Morty–themed Capture the Flag (CTF) challenge. Your mission is to help Rick turn back into a human by finding three critical flags: a password, a clue, and the final ingredient.
+
+---
+
+Overview
+
+Pickle Rick v2 is a fun and beginner-friendly Linux CTF room hosted on TryHackMe. Inspired by the Rick and Morty universe, this challenge puts you in the shoes of a hacker trying to assist Rick, who has turned himself into a pickle—again.
+
+Your goal is to explore the machine, identify misconfigurations, escalate privileges, and collect the required flags to help Rick return to his human form.
+
+---
+
+Objectives
+
+- Enumerate the target system for open ports and services
+- Find user credentials and gain access to the web application
+- Locate hidden files or directories using enumeration tools
+- Access the underlying operating system
+- Escalate privileges to root
+- Retrieve all three flags: the password, the clue, and the final ingredient
+
+---
+
+Tools and Techniques Used
+
+- Nmap (port scanning and service enumeration)
+- Gobuster or Dirb (web directory brute-forcing)
+- Curl / Burp Suite (web request inspection)
+- Linux command-line tools (cat, ls, find, grep, sudo)
+- Basic privilege escalation techniques
+
+---
+
+Flags to Find
+
+1. Username and password for the web login
+2. Clue file hidden in the system
+3. Final ingredient required to turn Rick back into a human
+
+---
+
+Basic Walkthrough (Spoiler-Free Summary)
+
+1. Perform an Nmap scan on the target IP to discover open ports.
+2. Visit the web application and try to log in.
+3. Use a directory brute-forcer to discover hidden web paths.
+4. Find credentials stored on the system.
+5. Log in via SSH or a reverse shell.
+6. Search the file system for the hidden flag files.
+7. Use privilege escalation techniques (e.g., sudo permissions or SUID binaries) to access the final flag.
+
+---
+
+Learning Outcomes
+
+- Web and service enumeration
+- File and directory discovery
+- Linux command-line basics
+- User privilege escalation
+- CTF problem-solving techniques
+
+---
+
+Prerequisites
+
+- Basic understanding of Linux
+- Familiarity with common CTF tools (Nmap, Gobuster, Burp, etc.)
+- Comfort with command-line usage
+- General knowledge of web applications and file permissions
+
+---
+
+Conclusion
+
+Pickle Rick v2 is a lighthearted and engaging CTF challenge that helps reinforce essential skills in enumeration, web analysis, and Linux privilege escalation. It’s ideal for beginners who are just starting out with Capture the Flag exercises or anyone who enjoys hacking challenges with a fun theme.
+
+
